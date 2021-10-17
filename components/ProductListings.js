@@ -27,7 +27,7 @@ function ProductListings() {
         return () => {
            
         }
-    }, [])
+    }, [products])
 
    console.log("prodycst")
    console.log(products)
