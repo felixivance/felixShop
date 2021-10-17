@@ -23,11 +23,11 @@ function ProductListings() {
     }
 
     useEffect(() => {
-        fetchProducts();
+        products.length ==0 ? fetchProducts(): ''
         return () => {
            
         }
-    }, [products])
+    }, [])
 
    console.log("prodycst")
    console.log(products)
