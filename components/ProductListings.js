@@ -30,15 +30,17 @@ function ProductListings() {
     }, [])
 
    console.log("prodycst")
-   console.log(products)
+   console.log(products.length)
         
     return (
-        <div className="grid grid-cols-2 sm:grid-col-4 gap-2 p-3">
-            {
-                products.map((product, index)=>(
-                     <ProductComponent key={index} product={product} />
-                ))
-            }
+        <div className="container mx-auto pt-5">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-4 xl:grid-cols-6">
+                {
+                    products.map((product, index)=>(
+                        <ProductComponent key={index} product={product} />
+                    ))
+                }
+            </div>
           
         </div>
     )
